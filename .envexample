@@ -1,0 +1,4 @@
+MONGO_URL = Your mongoo db url
+ADMIN_USERNAME = username
+ADMIN_PASSWORD = password
+TOKEN = token

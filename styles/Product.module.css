@@ -1,0 +1,138 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+}
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.image_container {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+.right {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  color: #d1411e;
+  font-weight: bold;
+}
+.price {
+  font-size: 24px;
+  color: #d1411e;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.description {
+  width: 70%;
+  text-align: start;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.choose {
+  font-weight: bold;
+}
+.sizes {
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
+}
+.size {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.size:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+.size:nth-child(3) {
+  width: 50px;
+  height: 50px;
+}
+.number {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  background: teal;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+.ingredients {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+.checkbox,
+.label {
+  cursor: pointer;
+}
+.add {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+.quantity {
+  width: 40px;
+  outline: none;
+  padding: 5px;
+}
+.add_btn {
+  padding: 5px;
+  background: #d1411e;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .image_container {
+    width: 60vw;
+    height: 60vh;
+  }
+  .right {
+    align-items: center;
+    padding: 10px;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+  .sizes {
+    width: 100%;
+  }
+  .ingredients {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

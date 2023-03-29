@@ -1,0 +1,34 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  text-align: center;
+  font-weight: 300;
+}
+.input {
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.btn {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}

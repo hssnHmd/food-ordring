@@ -1,0 +1,118 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  padding: 20px;
+}
+.left {
+  flex: 2;
+}
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+.name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #d1411e;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.right {
+  flex: 1;
+}
+.img_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+.wrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  border-radius: 5px;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  height: 30px;
+  color: #d1411e;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.payCash {
+  cursor: pointer;
+  padding: 10px 5px;
+  background: #fff;
+  color: teal;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .tr:first-child {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  .img_container {
+    width: 90px;
+    height: 90px;
+  }
+  .price,
+  .qauntity,
+  .total {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .price::before {
+    content: 'Price: ';
+  }
+  .qauntity::before {
+    content: 'Price: ';
+  }
+  .total::before {
+    content: 'Price: ';
+  }
+}
